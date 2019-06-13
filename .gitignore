@@ -1,4 +1,6 @@
 *.swp
+*.tar.gz
+tensorflow_datasets/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
