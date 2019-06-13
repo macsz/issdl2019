@@ -6,6 +6,7 @@ DEP_ORDER=(
     base_py3
     py2_tf113
     py3_tf113
+    py3_ngraph
 )
 
 for CONTAINER_NAME in "${DEP_ORDER[@]}"
