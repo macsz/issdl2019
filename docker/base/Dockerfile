@@ -36,4 +36,4 @@ RUN git clone https://github.com/tensorflow/models.git \
     && git checkout 4079c5d9693142a406f6ff392d14e2034b5f496d
 
 ADD tensorflow_datasets /root/tensorflow_datasets
-ENTRYPOINT ["python", "models/tutorials/image/cifar10/cifar10_train.py"]
+CMD ["python", "models/tutorials/image/cifar10/cifar10_train.py"]
