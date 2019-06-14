@@ -2,6 +2,7 @@
 *.tar.gz
 tensorflow_datasets/
 bazel.sh
+anaconda.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
