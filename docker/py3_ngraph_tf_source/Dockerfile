@@ -31,6 +31,7 @@ WORKDIR /root/ngraph-bridge/
 RUN apt-get -y install build-essential gcc g++ cmake
 RUN python build_ngtf.py
 RUN /bin/bash -c "source /root/ngraph-bridge/build_cmake/venv-tf-py3/bin/activate && pip install tensorflow_datasets"
+RUN echo "source /root/ngraph-bridge/build_cmake/venv-tf-py3/bin/activate" >> ~/.bashrc
 
 CMD ["/bin/bash", "-c", "source /root/ngraph-bridge/build_cmake/venv-tf-py3/bin/activate && python models/tutorials/image/cifar10/cifar10_train.py"]
 
